@@ -17,12 +17,12 @@ public class ApiService {
 
     public boolean createStudent(Student student) {
         studentRepo.save(student);
-        re``turn true;
+        return true;
     }
 
-    // public Student getOneStudent(int studentId) {
-    //     return studentRepo.findById(studentId).get();
-    //   }
+    public Student getOneStudent(int studentId) {
+        return studentRepo.findById(studentId).get();
+      }
 
     public List<Student> getAllStudents() {
         return studentRepo.findAll();
