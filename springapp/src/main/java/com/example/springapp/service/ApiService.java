@@ -24,7 +24,6 @@ public class ApiService {
         return studentRepo.findById(studentId).get();
       }
 
-    public List<Student> getAllStudents() {
-        return studentRepo.findAll();
+    lic List<Student> getAllStudents() {
+     return studentRepo.findAll();
     }
-}
