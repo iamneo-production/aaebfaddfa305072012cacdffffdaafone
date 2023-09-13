@@ -16,7 +16,7 @@ public class ApiService {
  
 
     public boolean createStudent(Student student) {
-        // studentRepo.save(student);
+        studentRepo.save(student);
         return true;
     }
 
