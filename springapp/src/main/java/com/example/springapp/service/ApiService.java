@@ -16,7 +16,7 @@ public class ApiService {
  
 
     public boolean createStudent(Student student) {
-        studentRepo.save(student);
+        // studentRepo.save(student);
         return true;
     }
 
@@ -24,6 +24,7 @@ public class ApiService {
         return studentRepo.findById(studentId).get();
       }
 
-    lic List<Student> getAllStudents() {
-     return studentRepo.findAll();
+    public List<Student> getAllStudents() {
+        return studentRepo.findAll();
     }
+}
